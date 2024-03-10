@@ -1,0 +1,17 @@
+p {
+  color: purple;
+}
+li {
+  color: blue;
+}
+.aluno {
+  color: red;
+}
+
+#id {
+  color: red;
+}
+
+button:hover {
+  color: blue;
+}
