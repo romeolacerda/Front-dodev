@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <form>
+      <!-- modelo -->
+      <div>
+        <label for="modeloDeCarro">Modelo de carro:</label>
+        <input type="text" name="modelo" id="modeloDeCarro" />
+      </div>
+      <!-- marca -->
+      <div>
+        <label for="marca">Marca:</label>
+        <input type="text" name="marca" id="marca" />
+      </div>
+      <!-- Ano -->
+      <div>
+        <label for="ano">Ano:</label>
+        <input type="text" name="ano" id="ano" />
+      </div>
+      <!-- Quilometragem -->
+      <div>
+        <label for="rodagem">Quilometragem:</label>
+        <input type="text" name="rodagem" id="rodagem" />
+      </div>
+      <!-- Valor -->
+      <div>
+        <label for="valor">Valor:</label>
+        <input type="text" name="valor" id="valor" />
+      </div>
+      <!-- Usado? -->
+      <div>
+        <label for="usado">Usado:</label>
+        <input id="usado" type="radio" name="uso" />
+        <label for="uso">Seminovo:</label>
+        <input id="seminovo" type="radio" name="uso" />
+        <label for="novo">Novo:</label>
+        <input id="novo" type="radio" name="uso" />
+      </div>
+      <!-- Adicionais -->
+      <div>
+        <div>
+          <label for="primeiroCheck">Airbag:</label>
+          <input id="primeiroCheck" type="checkbox" name="ano" />
+          <label for="segundoCheck">Ar-Condicionado:</label>
+          <input id="segundoCheck" type="checkbox" name="ano" />
+          <label for="terceiroCheck">Alarme:</label>
+          <input id="terceiroCheck" type="checkbox" name="ano" />
+          <label for="quartoCheck">Camera de ré:</label>
+          <input id="quartoCheck" type="checkbox" name="ano" />
+        </div>
+      </div>
+      <!-- Final da placa -->
+      <div>
+        <label for="placa">Qual o final da placa:</label>
+        <select name="placa" id="placa">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="0">0</option>
+        </select>
+      </div>
+    </form>
+  </body>
+</html>
