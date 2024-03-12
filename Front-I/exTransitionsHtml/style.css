@@ -1,0 +1,66 @@
+.header {
+  height: 10vh;
+  background-color: #7f00da;
+}
+.navBar {
+  padding-top: 2vh;
+  text-align: center;
+}
+.navOptions {
+  color: black;
+  padding: 10px;
+  font-size: 20px;
+}
+.navOptions:hover {
+  transition-timing-function: ease-in;
+  transition-duration: 0.5s;
+  color: white;
+}
+a {
+  text-decoration: none;
+}
+
+.form {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: #f0ffff;
+}
+.form-content {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  margin-bottom: 8px;
+}
+input,
+select {
+  padding: 8px;
+  margin-bottom: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.content-product {
+  display: flex;
+  justify-content: center;
+}
+
+.marketItem {
+  background-color: white;
+  height: 224px;
+  width: auto;
+  float: left;
+  margin-left: 2.5vw;
+  margin-right: 2.5vw;
+  overflow: hidden;
+}
+
+.marketItem:hover {
+  transition: 0.5s;
+  height: 320px;
+  border: solid 1px black;
+  border-radius: 10px;
+}
