@@ -23,6 +23,11 @@
   line-height: normal;
   margin-left: 2vw;
 }
+.navOptions:hover {
+  transition-duration: 0.5s;
+  padding: 0.5%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
 .content {
   background-color: #ebebeb;
   height: 86vh;
@@ -30,10 +35,7 @@
 }
 .benefits {
   height: 15vh;
-  width: 80vw;
-  margin-top: 5vh;
   background-color: white;
-  display: inline-block;
   border-radius: 1vw;
 }
 
@@ -53,4 +55,26 @@
 .offerTitle,
 .subTitle {
   margin-left: 1vw;
+}
+
+.contents {
+  width: 80vw;
+  margin-top: 5vh;
+  display: inline-block;
+}
+
+.marketItem {
+  background-color: white;
+  height: 224px;
+  width: 15vw;
+  float: left;
+  margin-left: 2.5vw;
+  margin-right: 2.5vw;
+  overflow: hidden;
+}
+
+.marketItem:hover {
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+  height: 330px;
 }

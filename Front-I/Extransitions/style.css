@@ -1,0 +1,58 @@
+.header {
+  height: 10vh;
+  background-color: darkslategray;
+}
+.navBar {
+  padding-top: 3vh;
+  text-align: center;
+}
+.navOptions {
+  padding: 10px;
+  font-size: 20px;
+}
+.navOptions:hover {
+  transition: 0.3s;
+  color: white;
+}
+.content {
+  display: inline-block;
+  text-align: center;
+  gap: 5px 5px;
+}
+.contentCard {
+  height: 44.8vh;
+  width: 50vw;
+  float: left;
+  border: solid 1px black;
+}
+.subtitle {
+  font-size: 22px;
+  padding-top: 10vh;
+  padding-bottom: 6vh;
+}
+.info:hover {
+  transition-timing-function: ease-in;
+  transition: 0.5s;
+  background-color: #a9a9a9;
+}
+.btn:hover {
+  cursor: pointer;
+}
+.history:hover {
+  transition-timing-function: ease-in;
+  transition: 0.5s;
+  background-color: #a9a9a9;
+}
+.events:hover {
+  transition-timing-function: ease-in;
+  transition: 0.5s;
+  background-color: #a9a9a9;
+}
+.schedule:hover {
+  transition-timing-function: ease-in;
+  transition: 0.5s;
+  background-color: #a9a9a9;
+}
+.link:hover {
+  cursor: pointer;
+}

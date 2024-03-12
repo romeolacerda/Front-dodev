@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      html {
+        box-sizing: border-box;
+        font-size: 16px;
+      }
+      *,
+      *:before,
+      *:after {
+        box-sizing: inherit;
+      }
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      ol,
+      ul {
+        margin: 0;
+        padding: 0;
+        font-weight: normal;
+      }
+      ol,
+      ul {
+        list-style: none;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Semantic and boxes</title>
+  </head>
+  <body>
+    <section class="header">
+      <div class="navBar">
+        <a class="navOptions">Home</a>
+        <a class="navOptions">Eventos</a>
+        <a class="navOptions">Horarios</a>
+        <a class="navOptions">Ajuda</a>
+      </div>
+    </section>
+    <section class="content">
+      <div class="history contentCard">
+        <h3 class="subtitle">Conheça nossa história</h3>
+        <p class="paragraph">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+      </div>
+      <div class="events contentCard">
+        <h3 class="subtitle">Veja nossos eventos</h3>
+        <ol>
+          <li class="link"><a>Feira Beneficiente</a></li>
+          <br />
+          <li class="link"><a>Jantar Beneficiente</a></li>
+        </ol>
+      </div>
+      <div class="schedule contentCard">
+        <h3 class="subtitle">Horarios</h3>
+        <ul>
+          <li class="link">Horario Adulto</li>
+          <br />
+          <li class="link">Horario Infantil</li>
+        </ul>
+      </div>
+      <div class="info contentCard">
+        <h3 class="subtitle">Precisa de mais informações?</h3>
+        <button class="btn">Clique aqui e saiba mais</button>
+      </div>
+    </section>
+  </body>
+</html>
