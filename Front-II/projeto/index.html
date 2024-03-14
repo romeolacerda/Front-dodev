@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro</title>
+    <script src="./index.js" defer></script>
+    <style>
+      .tipoInput:hover {
+        border: solid 2px purple; /* Mudando a cor da borda para roxa quando o campo recebe foco */
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <form action="">
+        <h1>Cadastro de negócios!</h1>
+        <!-- nome -->
+        <label for="name">Nome: </label>
+        <input id="tipoInputName" type="text" name="name" id="name" />
+        <!-- endereço -->
+        <label for="address">Endereço: </label>
+        <input id="tipoInputAddress" type="text" name="address" id="address" />
+        <!-- dias de funcionamento -->
+        <label for="workDays">Dias de funcionamento: </label>
+        <select id="tipoInputWorkDays" name="workDays" id="workDays">
+          <option value="segundaASexta">Segunda-a-Sexta</option>
+          <option value="segundaASabado">Segunda-a-Sábado</option>
+          <option value="segundaASegunda">Segunda-a-Segunda</option>
+        </select>
+        <!-- horarios -->
+        <label for="openHour">Horário de abertura: </label>
+        <input
+          id="tipoInputOpenHour"
+          type="text"
+          name="openHour"
+          id="openHour"
+        />
+        <label for="closeHour">Horário de Fechamento: </label>
+        <input
+          id="tipoInputCloseHour"
+          type="text"
+          name="closeHour"
+          id="closeHour"
+        />
+      </form>
+    </section>
+  </body>
+</html>
