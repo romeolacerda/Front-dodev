@@ -4,45 +4,102 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cadastro</title>
-    <script src="./index.js" defer></script>
     <style>
+      * {
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .mainSec {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+      }
+
+      .form {
+        width: 100%;
+        max-width: 800px;
+        border-radius: 10px;
+        border: solid 3px black;
+        padding: 20px;
+      }
+
       .tipoInput:hover {
-        border: solid 2px purple; /* Mudando a cor da borda para roxa quando o campo recebe foco */
+        border: 2px solid purple;
+        border-radius: 10px;
+      }
+      h1 {
+        display: flex;
+        justify-content: center;
+      }
+      .input {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      @media (min-width: 800px) {
+        .form {
+          display: grid;
+          grid-template-columns: repeat(6, 1fr);
+          gap: 10px;
+        }
+      }
+      @media (min-width: 400px) and (max-width: 799px) {
+        .form {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 10px;
+        }
+      }
+      @media (max-width: 399px) {
+        .form {
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 10px;
+        }
       }
     </style>
   </head>
   <body>
-    <section>
-      <form action="">
-        <h1>Cadastro de negócios!</h1>
+    <h1>Cadastro de negócios!</h1>
+    <section class="mainSec">
+      <form class="form">
         <!-- nome -->
         <label for="name">Nome: </label>
-        <input id="tipoInputName" type="text" name="name" id="name" />
+        <input class="tipoInput" id="tipoInputName" type="text" name="name" />
+
         <!-- endereço -->
         <label for="address">Endereço: </label>
-        <input id="tipoInputAddress" type="text" name="address" id="address" />
+        <input
+          class="tipoInput"
+          id="tipoInputAddress"
+          type="text"
+          name="address"
+        />
+
         <!-- dias de funcionamento -->
         <label for="workDays">Dias de funcionamento: </label>
-        <select id="tipoInputWorkDays" name="workDays" id="workDays">
+        <select class="tipoInput" id="tipoInputWorkDays" name="workDays">
           <option value="segundaASexta">Segunda-a-Sexta</option>
           <option value="segundaASabado">Segunda-a-Sábado</option>
           <option value="segundaASegunda">Segunda-a-Segunda</option>
         </select>
+
         <!-- horarios -->
         <label for="openHour">Horário de abertura: </label>
         <input
+          class="tipoInput"
           id="tipoInputOpenHour"
           type="text"
           name="openHour"
-          id="openHour"
         />
         <label for="closeHour">Horário de Fechamento: </label>
         <input
+          class="tipoInput"
           id="tipoInputCloseHour"
           type="text"
           name="closeHour"
-          id="closeHour"
         />
+        <button type="submit">Enviar</button>
       </form>
     </section>
   </body>
