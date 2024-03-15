@@ -54,6 +54,12 @@ a:visited {
   gap: 30px;
   text-decoration: none;
 }
+.navBarOptions .menu-icon {
+  display: none; /* Oculta o ícone de hamburger em telas maiores */
+}
+.dropdown-menu {
+  display: none; /* Oculta o menu dropdown por padrão */
+}
 .mainContent {
   height: 70vh;
 }
@@ -84,4 +90,28 @@ a:visited {
   justify-content: space-between;
   gap: 30px;
   text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+  .navBarA {
+    display: none; /* Oculta os links de navegação em telas menores */
+  }
+  .navBarOptions .menu-icon {
+    display: block; /* Exibe o ícone de hamburger em telas menores */
+    cursor: pointer;
+  }
+  .dropdown-menu {
+    display: none; /* Oculta o menu dropdown por padrão */
+  }
+  .dropdown-menu.show {
+    /* display: block; Exibe o menu dropdown ao clicar no ícone de hamburger */
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    background-color: #777777;
+    border: solid 1px white;
+    border-radius: 2px;
+    height: 8vh;
+    gap: 2px;
+  }
 }

@@ -21,3 +21,8 @@ formEl.addEventListener("submit", (event) => {
     .then((res) => res.json())
     .then((data) => console.log(data));
 });
+
+function toggleMenu() {
+  var dropdownMenu = document.getElementById("dropdownMenu");
+  dropdownMenu.classList.toggle("show");
+}
