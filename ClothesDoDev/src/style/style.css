@@ -63,6 +63,10 @@ a:visited {
 .mainContent {
   height: 70vh;
 }
+.mainContent img {
+  height: 600px;
+  width: 300px;
+}
 .promotions {
   display: flex;
   justify-content: space-between;
@@ -113,5 +117,13 @@ a:visited {
     border-radius: 2px;
     height: 8vh;
     gap: 2px;
+  }
+  .promotions {
+    display: flex;
+  }
+  .promotionsForm {
+    height: 6vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }

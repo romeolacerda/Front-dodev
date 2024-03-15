@@ -5,9 +5,6 @@ formEl.addEventListener("submit", (event) => {
 
   const formData = new FormData(formEl);
   const data = Object.fromEntries(formData);
-  console.log(data);
-  console.log("preparando para envio...");
-  //no ex a api não funciona mesmo
   fetch(
     "https://apigenerator.dronahq.com/api/1iUnvItP/dodevclothespromotions",
     {
