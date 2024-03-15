@@ -58,7 +58,17 @@ a:visited {
   height: 70vh;
 }
 .promotions {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: #aaaaaa;
   height: 15vh;
+}
+#promotionsBtn {
+  border-radius: 3px;
+  background-color: #303030;
+  color: white;
+  text-decoration: none;
 }
 .footerBar {
   background-color: #777777;

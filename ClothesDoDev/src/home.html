@@ -16,6 +16,7 @@
       }
     </style>
     <title>DoDev Clothes</title>
+    <script src="./js/api.js" defer></script>
   </head>
   <body>
     <header>
@@ -32,7 +33,19 @@
       </div>
     </header>
     <section class="mainContent"></section>
-    <form class="promotions"></form>
+    <form class="promotions">
+      <!-- formulario -->
+      <h2>Receba Promoções!</h2>
+      <div>
+      <label for="name">Qual o seu nome? </label>
+      <input type="text" name="name" id="name">
+      <label for="email">Qual o seu email? </label>
+      <input type="text" name="email" id="email">
+      <label for="phoneNumber">Qual seu número?</label>
+      <input type="text" name="phoneNumber" id="phoneNumber">
+      <button type="submit" id="promotionsBtn">Quero receber!</button>
+      </div>
+    </form>
     <footer>
         <div class="footerBar">
           <div class="footerOptions"><p>DoDev Clothes</p>
