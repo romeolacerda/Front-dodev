@@ -19,94 +19,104 @@
     <script src="./js/index.js" defer></script>
   </head>
   <body>
-    <header>
-      <div class="navBar">
-        <div class="navBarOptions">
-          <p class="navBarA">DoDev Clothes</p>
-          <a class="navBarA" href="./home.html">Home</a>
-          <a class="navBarA" href="./sobre.html">Sobre nós</a>
-          <div class="menu-icon" onclick="toggleMenu()">
-            <img src="./imgs/store_FILL0_wght400_GRAD0_opsz24.svg" alt="Menu" />
+    <div class="container">
+      <header>
+        <div class="navBar">
+          <div class="navBarOptions">
+            <p class="navBarA">DoDev Clothes</p>
+            <a class="navBarA" href="./home.html">Home</a>
+            <a class="navBarA" href="./sobre.html">Sobre nós</a>
+            <div class="menu-icon" onclick="toggleMenu()">
+              <img src="./imgs/store_FILL0_wght400_GRAD0_opsz24.svg" alt="Menu" />
+            </div>
+            <div class="dropdown-menu" id="dropdownMenu">
+              <p>DoDev Clothes</p>
+              <a href="./home.html">Home</a
+              <a href="./sobre.html">Sobre nós</a>
+            </div>
           </div>
-          <div class="dropdown-menu" id="dropdownMenu">
+  
+          <!-- shopping cart -->
+          <div class="shooppingCart">
+            <a onclick="toggleCart()">
+              <img id="cartIcon "
+                src="./imgs/shopping_cart_FILL0_wght400_GRAD0_opsz24.svg"
+                alt="cartIcon"
+              />
+            </a>
+            <span>0</span>
+          </div>
+        </div>
+      </header>
+      <div class="cartTab">
+        <h1>shoopping Cart</h1>
+        <div class="listCart">
+          <div class="item">
+            <div class="productName">
+              Name
+            </div>
+            <div class="totalPrice">
+              $200
+            </div>
+            <div class="quantity">
+              <span class="minus"><</span>
+              <span>1</span>
+              <span class="plus">></span>
+            </div>
+          </div>
+        </div>
+  
+        <div class="btn">
+          <button class="close">Close</button>
+          <button class="checkOut">Check out</button>
+        </div>
+      </div>
+      <section class="mainContent">
+        <div class="mainContentHeader">
+          <h1>Seu armario tech, pro seu inimigo ser o compilador, não a moda.</h1>
+        </div>
+        <div class="mainContentMainImg">
+          <img  src="./imgs/photo-1512327428889-607eeb19efe8 (2).jpeg" alt="">
+        </div>
+        <h1>Principais Modelos</h1>
+        <div class="mainContentProducts">
+          <div>
+            <img src="" alt="">
+            <p>Blusa preta</p>
+          </div>
+          <div>
+            <img src="" alt="">
+            <p>Moletom Branco</p>
+          </div>
+          <div>
+            <img src="" alt="">
+            <p>moletom preto</p>
+          </div>
+        </div>
+      </section>
+      <form class="promotions">
+        <!-- formulario -->
+        <h2>Receba Promoções!</h2>
+        <div class="promotionsForm">
+          <div><label for="name">Qual o seu nome? </label>
+          <input type="text" name="name" id="name" /></div>
+          <div><label for="email">Qual o seu email? </label>
+          <input type="text" name="email" id="email" /></div>
+          <div><label for="phoneNumber">Qual seu número?</label>
+          <input type="text" name="phoneNumber" id="phoneNumber" /></div>
+          <div><label for=""></label>
+          <button type="submit" id="promotionsBtn">Quero receber!</button></div>
+        </div>
+      </form>
+      <footer>
+        <div class="footerBar">
+          <div class="footerOptions">
             <p>DoDev Clothes</p>
-            <a href="./home.html">Home</a
+            <a href="./home.html">Home</a>
             <a href="./sobre.html">Sobre nós</a>
           </div>
         </div>
-
-        <!-- shopping cart -->
-        <div class="shooppingCart">
-          <a href="./cart.html">
-            <img
-              src="./imgs/shopping_cart_FILL0_wght400_GRAD0_opsz24.svg"
-              alt=""
-            />
-          </a>
-          <span>0</span>
-        </div>
-      </div>
-    </header>
-    <div class="cartTab">
-      <h1>shoopping Cart</h1>
-      <div class="listCart">
-        <div class="item">
-          <div class="image">
-            <img src="" alt="">
-          </div>
-        </div>
-      </div>
-
-      <div>
-        <button class="close">Close</button>
-        <button class="checkOut">Check out</button>
-      </div>
+      </footer>
     </div>
-    <section class="mainContent">
-      <div class="mainContentHeader">
-        <h1>Seu armario tech, pro seu inimigo ser o compilador, não a moda.</h1>
-      </div>
-      <div class="mainContentMainImg">
-        <img  src="./imgs/photo-1512327428889-607eeb19efe8 (2).jpeg" alt="">
-      </div>
-      <h1>Principais Modelos</h1>
-      <div class="mainContentProducts">
-        <div>
-          <img src="" alt="">
-          <p>Blusa preta</p>
-        </div>
-        <div>
-          <img src="" alt="">
-          <p>Moletom Branco</p>
-        </div>
-        <div>
-          <img src="" alt="">
-          <p>moletom preto</p>
-        </div>
-      </div>
-    </section>
-    <form class="promotions">
-      <!-- formulario -->
-      <h2>Receba Promoções!</h2>
-      <div class="promotionsForm">
-        <div><label for="name">Qual o seu nome? </label>
-        <input type="text" name="name" id="name" /></div>
-        <div><label for="email">Qual o seu email? </label>
-        <input type="text" name="email" id="email" /></div>
-        <div><label for="phoneNumber">Qual seu número?</label>
-        <input type="text" name="phoneNumber" id="phoneNumber" /></div>
-        <div><label for=""></label>
-        <button type="submit" id="promotionsBtn">Quero receber!</button></div>
-      </div>
-    </form>
-    <footer>
-      <div class="footerBar">
-        <div class="footerOptions">
-          <p>DoDev Clothes</p>
-          <a href="./home.html">Home</a>
-          <a href="./sobre.html">Sobre nós</a>
-        </div>
-      </div>
-    </footer>
   </body>
 </html>

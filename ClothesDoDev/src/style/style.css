@@ -43,6 +43,7 @@ a:visited {
 }
 
 /* style starts here */
+
 .navBar {
   background-color: #777777;
   display: flex;
@@ -77,6 +78,7 @@ a:visited {
   position: absolute;
   font-size: 14px;
   top: 50%;
+  cursor: pointer;
 }
 
 .cartTab {
@@ -84,9 +86,14 @@ a:visited {
   background-color: #292929;
   color: #eee;
   position: fixed;
-  inset: 0 0 150px auto;
+  top: 110px;
+  left: auto;
+  right: 0;
+  bottom: 150px;
   display: grid;
   grid-template-rows: 70px 1fr 70px;
+  border-radius: 5px;
+  transition: 0.5s;
 }
 
 .cartTab h1 {
@@ -108,8 +115,42 @@ a:visited {
 }
 
 .cartTab .btn .close {
-  background-color: #eee;
+  background-color: #cc0033;
 }
+
+.cartTab .listCart .item {
+  display: grid;
+  grid-template-columns: 70px 150px 90px 1fr;
+  gap: 10px;
+  text-align: center;
+  align-items: center;
+}
+
+.listCart .quantity span {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-color: #eee;
+  color: #555;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.listCart .quantity span:nth-child(2) {
+  background-color: transparent;
+  color: #eee;
+}
+
+.listCart .item:nth-child(even) {
+  background-color: #eee1;
+}
+.listCart {
+  overflow: auto;
+}
+.listCart::-webkit-scrollbar {
+  width: 0;
+}
+
 .mainContent {
   display: flex;
   flex-direction: column;

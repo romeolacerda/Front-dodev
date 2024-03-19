@@ -23,3 +23,18 @@ function toggleMenu() {
   var dropdownMenu = document.getElementById("dropdownMenu");
   dropdownMenu.classList.toggle("show");
 }
+
+let cartTab = document.querySelector(".cartTab");
+let cartIsOpen = false; // Inicialmente, o carrinho está fechado
+
+function toggleCart() {
+  if (cartIsOpen) {
+    // Se o carrinho estiver aberto, feche-o definindo right como -400px
+    cartTab.style.right = "-400px";
+    cartIsOpen = false;
+  } else {
+    // Se o carrinho estiver fechado, abra-o definindo right como 0
+    cartTab.style.right = "0";
+    cartIsOpen = true;
+  }
+}
