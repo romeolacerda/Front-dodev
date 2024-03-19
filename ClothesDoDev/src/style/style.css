@@ -64,6 +64,52 @@ a:visited {
 .dropdown-menu {
   display: none; /* Oculta o menu dropdown por padrão */
 }
+
+.shooppingCart span {
+  display: flex;
+  width: 15px;
+  height: 14px;
+  background-color: red;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 50%;
+  position: absolute;
+  font-size: 14px;
+  top: 50%;
+}
+
+.cartTab {
+  width: 400px;
+  background-color: #292929;
+  color: #eee;
+  position: fixed;
+  inset: 0 0 150px auto;
+  display: grid;
+  grid-template-rows: 70px 1fr 70px;
+}
+
+.cartTab h1 {
+  padding: 20px;
+  margin: 0;
+  font-weight: 300;
+}
+
+.cartTab .btn {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.cartTab .btn button {
+  background-color: #e8bc0e;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.cartTab .btn .close {
+  background-color: #eee;
+}
 .mainContent {
   display: flex;
   flex-direction: column;
@@ -80,8 +126,8 @@ a:visited {
   color: black; /* Cor do texto */
 }
 .mainContentMainImg img {
-  height: 400px;
-  width: 240px;
+  height: 250px;
+  width: 400px;
 }
 
 .mainContentProducts {
@@ -94,9 +140,9 @@ a:visited {
   justify-content: space-between;
   padding: 15px;
   background-color: #aaaaaa;
-  position: fixed;
-  height: 100px;
   width: 100%;
+  position: fixed;
+  bottom: 50px;
 }
 .promotionsForm {
   display: flex;
@@ -114,8 +160,8 @@ a:visited {
   padding: 20px 30px;
   height: 50px;
   width: 100%;
-  bottom: 0;
   position: fixed;
+  bottom: 0;
 }
 .footerOptions {
   display: flex;
