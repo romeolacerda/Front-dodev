@@ -44,28 +44,27 @@
                 alt="cartIcon"
               />
             </a>
-            <span>0</span>
+            <span></span>
           </div>
         </div>
       </header>
       <div class="cartTab">
         <h1>shoopping Cart</h1>
         <div class="listCart">
-          <div class="item">
+          <div class="cartItem">
             <div class="productName">
+              <span class="minus">Nome: </span>
             </div>
-            <div class="totalPrice">
+            <div class="Quantity">
+              <span class="minus">Quantity: </span>
             </div>
-            <div class="quantity">
-              <span class="minus"><</span>
-              <span>0</span>
-              <span class="plus">></span>
+            <div class="Price">
+              <span class="minus">Price: </span>
             </div>
           </div>
         </div>
   
         <div class="btn">
-          <button class="close">Close</button>
           <button class="checkOut">Check out</button>
         </div>
       </div>
@@ -79,9 +78,14 @@
           </div>
         </div>
         <div class="productInfos">
-          <h3 class="productInfoName">Moletom preto</h3>
+          <h3 class="productInfoName"></h3>
           <h2></h2>
-          <button>Adicionar ao Carrinho</button>
+            <div class="quantityButtons">
+              <button class="quantityButton minus" onclick="decrementQuantity()">-</button>
+              <span class="quantity">1</span>
+              <button class="quantityButton plus" onclick="incrementQuantity()">+</button>
+            </div>
+        <button onclick="addToCart()">Adicionar ao Carrinho</button>
         </div>
       </section>
       <form class="promotions">

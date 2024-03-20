@@ -16,7 +16,7 @@
       }
     </style>
     <title>DoDev Clothes</title>
-    <script src="./js/api.js" defer></script>
+    <script src="./js/index.js" defer></script>
   </head>
   <body>
     <header>
@@ -36,15 +36,42 @@
         </div>
 
         <!-- shopping cart -->
-        <a href="./cart.html">
-          <img
-            src="./imgs/shopping_cart_FILL0_wght400_GRAD0_opsz24.svg"
-            alt=""
-          />
-        </a>
+        <div class="shooppingCart">
+          <a onclick="toggleCart()">
+            <img id="cartIcon "
+              src="./imgs/shopping_cart_FILL0_wght400_GRAD0_opsz24.svg"
+              alt="cartIcon"
+            />
+          </a>
+          <span></span>
+        </div>
       </div>
     </header>
-    <section class="mainContent"></section>
+    <div class="cartTab">
+      <h1>shoopping Cart</h1>
+      <div class="listCart">
+        <div class="cartItem">
+          <div class="productName">
+            <span class="minus">Nome: </span>
+          </div>
+          <div class="Quantity">
+            <span class="minus">Quantity: </span>
+          </div>
+          <div class="Price">
+            <span class="minus">Price: </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="btn">
+        <button class="checkOut">Check out</button>
+      </div>
+    </div>
+    <section class="mainContentAbout">
+      <div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem veritatis libero, laudantium doloribus quod debitis obcaecati inventore non voluptatem illum officiis rem ad ut dolorem voluptatum laborum? Eveniet vero necessitatibus corporis voluptatibus repellat? Accusantium eaque placeat necessitatibus officiis qui ducimus nam? Nostrum natus nesciunt nobis ea repudiandae, consequatur aliquid saepe voluptatem, similique facere consectetur? Ducimus rem, perspiciatis veritatis ipsum illo vitae corporis vero deserunt quasi sit, qui natus suscipit doloremque doloribus quisquam repudiandae velit hic officia assumenda at impedit perferendis explicabo provident? Id earum dolore ab quisquam nisi nihil, praesentium ea, similique voluptatum odit pariatur veritatis molestias impedit nesciunt illo reprehenderit dicta aspernatur accusamus labore sequi. Et impedit vero porro praesentium repellendus. Sapiente, tenetur accusamus asperiores quidem maiores iusto quam eius consequuntur voluptas blanditiis pariatur officia illo? Illum voluptate aperiam provident quasi nesciunt, ipsa impedit expedita sequi inventore pariatur qui voluptates perferendis animi officia nobis vero accusantium sit similique officiis aut temporibus nostrum, laboriosam repellat debitis. Quas earum porro omnis in aliquam! Veritatis distinctio facilis animi dolorum nisi quos omnis pariatur cumque quam exercitationem, neque temporibus doloribus quae nesciunt eaque facere architecto possimus cupiditate molestias, rerum ipsum corporis quasi. Officiis omnis quas similique eius tempora consequatur sequi, harum perferendis sed.</p>
+      </div>
+    </section>
     <form class="promotions">
       <!-- formulario -->
       <h2>Receba Promoções!</h2>
