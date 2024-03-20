@@ -38,10 +38,3 @@ function toggleCart() {
     cartIsOpen = true;
   }
 }
-
-function product(productName) {
-  if ((productName = "moletomPreto")) {
-  } else if ((productName = "moletomBranco")) {
-  } else if ((productName = "camisaPreta")) {
-  }
-}
