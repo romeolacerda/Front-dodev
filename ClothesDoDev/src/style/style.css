@@ -43,6 +43,9 @@ a:visited {
 }
 
 /* style starts here */
+.cotainer {
+  margin-bottom: 0px;
+}
 
 .navBar {
   background-color: #777777;
@@ -159,12 +162,13 @@ a:visited {
   justify-content: center;
   align-items: center;
   gap: 10px;
+  margin-bottom: 20px;
 }
 
 .mainContentHeader h1 {
   display: flex;
   justify-content: center;
-  padding-top: 100px;
+  padding-top: 50px;
   font-size: 24px; /* Tamanho da fonte */
   color: black; /* Cor do texto */
 }
@@ -194,17 +198,41 @@ a:visited {
   border: solid 2px black;
 }
 .productContent {
-  margin-top: 100px;
-  height: 700px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  height: 450px;
+  gap: 20px;
   width: 100%;
 }
+
+.productImages {
+  padding: 3px;
+  border: ridge #303030 2px;
+}
+.productMainImage {
+  height: 300px;
+  width: 540px;
+}
+.productSubImages {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 540px;
+}
+.productSubImages img {
+  height: 100px;
+  width: 180px;
+}
+
 .promotions {
   display: flex;
   justify-content: space-between;
   padding: 15px;
   background-color: #aaaaaa;
   width: 100%;
-  position: fixed;
   bottom: 50px;
 }
 .promotionsForm {
@@ -221,10 +249,9 @@ a:visited {
   display: flex;
   justify-content: space-between;
   padding: 20px 30px;
-  height: 50px;
+  height: 75px;
   width: 100%;
-  position: fixed;
-  bottom: 0;
+  margin-bottom: -100;
 }
 .footerOptions {
   display: flex;

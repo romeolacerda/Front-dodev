@@ -38,3 +38,35 @@ function toggleCart() {
     cartIsOpen = true;
   }
 }
+
+function productChosen(productName) {
+  window.localStorage.setItem("nomeDoProduto", productName);
+}
+
+function productTypeInfos() {
+  let productInfo = window.localStorage.getItem("nomeDoProduto");
+  let productContent = document.querySelector(".productContent");
+
+  if (productInfo == "blusaPreta") {
+    let h3Element = productContent.querySelector(".productInfos h3");
+    h3Element.innerText = "blusaPreta";
+    let h2Element = productContent.querySelector(".productInfos h2");
+    h2Element.innerText = "R$ 120";
+    let imgElement = productContent.querySelector(".productContent img");
+    imgElement.src = "./imgs/photo-1627910016961-ee310ef0b108 (1).jpeg";
+    imgElement.alt = "blusaPreta";
+    let imgsElements = productContent.querySelectorAll(".productSubImages img");
+    imgsElements.forEach((imgElement, index) => {
+      imgElement.src = "./imgs/photo-1627910016961-ee310ef0b108 (1).jpeg"; // Substitua pelo caminho da sua imagem
+      imgElement.alt = `Imagem ${index + 1}`; // Altere conforme necessário
+    });
+  }
+  if (productInfo == "moletomBranco") {
+    let h3Element = productContent.querySelector(".productInfos h3");
+    h3Element.innerText = "moletomBranco";
+  }
+  if (productInfo == "moletomPreto") {
+    let h3Element = productContent.querySelector(".productInfos h3");
+    h3Element.innerText = "moletomPreto";
+  }
+}
